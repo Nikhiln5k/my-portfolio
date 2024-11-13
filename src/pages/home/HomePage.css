@@ -1,0 +1,42 @@
+main{
+    background-color: rgb(233, 233, 227);
+    border-radius: 50px;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contact button{
+    padding: 10px 15px 10px 15px;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px #44444465;
+}
+
+.primary-btn{
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    border-radius: 60px;
+}
+
+.secondary-btn{
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    border: 2px solid rgba(36, 36, 36, 0.082);
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    border-radius: 60px;
+}
