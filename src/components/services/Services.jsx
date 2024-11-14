@@ -15,7 +15,7 @@ function Services() {
       opacity: 1,
       scrollTrigger: {
         trigger: ".section",
-        start: "top 80%",
+        start: "top 60%",
         end: "top 20%",
         scrub: true,
         toggleActions: "play none none reverse",

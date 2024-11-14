@@ -36,7 +36,7 @@ function AboutPage() {
                 about my journey below.
               </span>
               <div className="mt-5">
-                <Link to={cv} target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #2424245e", color: "white",}}>
+                <Link to={cv} target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #8884", color: "white",}}>
                   View my CV
                 </Link>
               </div>
@@ -63,7 +63,7 @@ function AboutPage() {
                 <div
                   key={i}
                   style={{
-                    border: "1px solid #2424245e",
+                    border: "1px solid #8884",
                     padding: "10px 15px 10px 15px",
                     borderRadius: "20px",
                   }}
