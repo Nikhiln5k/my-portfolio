@@ -18,7 +18,7 @@ function Projects() {
         <div className="title">
           <span className="fw-bold">Projects</span>
         </div>
-        <div className="d-flex gap-2 flex-wrap">
+        <div className="d-flex justify-content-center gap-2 flex-wrap">
           {data?.map((item,i) => (
             <a href={item.link} style={{textDecoration:"none", color:"#444"}}>
               <Card className="text-center btn" style={{ border: "none", borderRadius: "6px", width: "300px", background: "transparent", }}>

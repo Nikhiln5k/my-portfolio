@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {loader ? (
-        <Loader />
+        <Loader /> || "Loading..."
       ) : (
         <Routes>
           <Route path="/" element={<HomePage />} />
