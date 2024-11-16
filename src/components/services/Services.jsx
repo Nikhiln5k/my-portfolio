@@ -38,14 +38,14 @@ function Services() {
             </div>
             <div className='d-flex justify-content-center flex-wrap align-items-center gap-5'>
                 <div className="cards">
-                    <span className='mb-2 fs-3'><i class="fa-solid fa-globe"></i></span>
-                    <h4>Web</h4><hr />
-                    <p>Transforming ideas into exceptional web experiences.</p>
+                    <span className='mb-2 fs-3 d-none d-md-inline'><i class="fa-solid fa-code"></i></span>
+                    <h4><i class="fa-solid fa-code d-inline d-md-none me-2"></i>Frontend Development</h4><hr />
+                    <p className='mt-2'>Crafting seamless and interactive user interfaces that bring ideas to life.</p>
                 </div>
                 <div className="cards">
-                    <span className='mb-2 fs-3'><i class="fa-solid fa-code"></i></span>
-                    <h4>Development</h4><hr />
-                    <p>Bringing your vision to life with the latest technology and design trends.</p>
+                    <span className='mb-2 fs-3 d-none d-md-inline'><i class="fa-solid fa-globe"></i></span>
+                    <h4><i class="fa-solid fa-globe d-inline d-md-none me-2"></i>Backend Development</h4><hr />
+                    <p className='mt-2'>Crafting robust and scalable server-side solutions to power seamless digital experiences.</p>
                 </div>
             </div>
         </section>

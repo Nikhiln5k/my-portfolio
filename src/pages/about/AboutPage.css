@@ -1,0 +1,28 @@
+
+.about-section{
+    padding: 3rem;
+}
+
+.about-intro{
+    padding: 4rem;
+}
+
+.about{
+    padding: 4rem;
+}
+
+
+@media screen and (max-width:764px) {
+    .about-section{
+        padding: 1rem;
+    }
+    .about-intro{
+        padding: 5px 20px 5px 20px;
+    }
+    .about{
+        padding: 10px ;
+    }
+    .tech-skills{
+        padding: 10px 5px 10px 5px;
+    }
+}

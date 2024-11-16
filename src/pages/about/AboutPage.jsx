@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import cv from "../../assets/Nikhil_Resume.pdf";
 import profile from "../../assets/profile1.jpg";
+import './AboutPage.css'
 
 function AboutPage() {
   const data = [
@@ -16,14 +17,14 @@ function AboutPage() {
   ];
   return (
     <>
-      <section className="d-flex flex-column justify-content-center align-items-center p-5" style={{backgroundColor: "#000" }}>
+      <section className="about-section d-flex flex-column justify-content-center align-items-center" style={{backgroundColor: "#000" }}>
         <Row className="p-2" style={{ border: "1px solid #2424245e", borderBottomLeftRadius: "100px", borderBottomRightRadius: "100px",}}>
           <Col className="p-2 d-flex justify-content-center" md={6} sm={12}>
             <div style={{ width: "300px", height: "400px", overflow: "hidden" }}>
               <img src={profile} style={{ width: "100%", borderRadius: "15px", filter: "grayscale(90%)",}} alt="profile pic"/>
             </div>
           </Col>
-          <Col className="d-flex align-items-center p-3" md={6} sm={12}>
+          <Col className="about-intro d-flex align-items-center" md={6} sm={12}>
             <div className="banner-head fw-bold" style={{ backgroundClip: "text", background: "transparent" }}>
               <p>
                 <span style={{ backgroundImage: "linear-gradient(97deg, rgb(230,230,230) 0%, rgb(100,100,100, 0.55) 100%, rgb(12,12,12, 0.55) 100%)",}}>
@@ -44,7 +45,7 @@ function AboutPage() {
           </Col>
         </Row>
 
-        <Row className="p-md-5 mt-5 w-100" style={{ background: "linear-gradient(50deg, #2424245e, #000)", borderTopLeftRadius: "100px", borderBottomLeftRadius: "20px",}}>
+        <Row className="about mt-5 w-100" style={{ background: "linear-gradient(50deg, #2424245e, #000)", borderTopLeftRadius: "100px", borderBottomLeftRadius: "20px",}}>
           <Col className="text-white" style={{float:"left"}} md={6} sm={12}>
             <h2>My career journey</h2>
             <p className="mt-4" style={{ color: "#999" }}>
@@ -57,7 +58,7 @@ function AboutPage() {
               </p>
             </p>
           </Col>
-          <Col md={6} sm={12}>
+          <Col className="tech-skills" md={6} sm={12}>
             <div className="d-flex gap-2 flex-wrap">
               {data?.map((item, i) => (
                 <div

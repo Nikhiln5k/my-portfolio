@@ -25,7 +25,7 @@ function Banner() {
             </p>
           </div>
           <div>
-            <a href='mailto:nikhilsk289@gmail.com' className="primary-btn d-flex">
+            <a href='mailto:nikhilsk289@gmail.com' className="primary-btn d-flex align-items-center">
                Contact Me <i className="fa-solid fa-arrow-right ms-2 text-white"></i>
             </a>
           </div>

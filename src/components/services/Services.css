@@ -1,5 +1,5 @@
 .section{
-    height: 100vh;
+    /* height: 100vh; */
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     transition: all 0.4s;
@@ -20,9 +20,8 @@ section h2{
 
 .cards{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     padding: 10px;
     
 }
@@ -39,4 +38,10 @@ section h2{
     font-size: 25px !important;
     line-height: 20px !important;
    }
+
+   .cards{
+    width: 300px;
+    padding: 10px;
+    
+    }
   }
