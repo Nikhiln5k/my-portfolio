@@ -41,7 +41,7 @@ h1{
     border-radius: 60px;
 }
 
-@keyframes appear {
+/* @keyframes appear {
     from {
         opacity: 0;
         transform: translateY(100px);
@@ -58,4 +58,4 @@ section{
     animation: appear 0.4s linear;
     animation-timeline: view();
     animation-range: entry 0;
-}
+} */
