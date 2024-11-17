@@ -17,7 +17,7 @@ function Header() {
             <Navbar className='p-3 w-100 d-flex justify-content-md-between justify-content-center' sticky='top'>
                 <div className='d-flex align-items-center gap-2'>
                     <a style={style} href={'mailto:nikhilsk289@gmail.com'}>
-                        <i class="fa-solid fa-envelope d-md-none d-inline fs-1"></i>
+                        <i class="fa-solid fa-envelope d-md-none d-inline" style={{fontSize:"2rem"}}></i>
                         <span className='d-none d-md-inline'>nikhilsk289@gmail.com</span>
                     </a>
                     <a href={resume} download={resume} target='_blank' className='bg-light text-dark' style={{textDecoration:"none", borderRadius:"20px", padding:"10px 15px 10px 15px"}}>CV</a>
@@ -26,12 +26,12 @@ function Header() {
                     <Link style={style} to={'/about'} className='fw-md-normal fw-bold'><span>About <span className='d-none d-md-inline'>me</span></span></Link>
                     <span className="me-3 d-none d-md-inline">/</span>
                     <Link style={style} to={'https://www.linkedin.com/in/nikhil-s-kumar-4b6127297/'}>
-                        <i class="fa-brands fa-linkedin-in d-md-none d-inline fs-1"></i>
+                        <i class="fa-brands fa-linkedin-in d-md-none d-inline" style={{fontSize:"2rem"}}></i>
                         <span className='d-none d-md-inline fw-bold'>Linkedin</span>
                     </Link>
                     <span className="me-3 d-none d-md-inline">/</span>
                     <Link style={style} to={'https://github.com/Nikhiln5k'}>
-                        <i class="fa-brands fa-github d-md-none d-inline fs-1"></i>
+                        <i class="fa-brands fa-github d-md-none d-inline" style={{fontSize:"2rem"}}></i>
                         <span className='d-none d-md-inline fw-bold'>Github</span>
                     </Link>
                 </div>
