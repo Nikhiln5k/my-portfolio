@@ -1,14 +1,42 @@
 
-.skills-container{
+/* .skills-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
+} */
+
+.skills-container{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    user-select: none;
 }
 
+.skills-container:hover ul{
+    animation-play-state: paused;
+}
 
-.skills img{
-    width: 100%;
-    object-fit: contain;
+.skills-container ul{
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    font-size: 5rem;
+    justify-content: space-between;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll{
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:764px) {
+    .skills-container ul{
+        gap: 2rem;
+    }
 }

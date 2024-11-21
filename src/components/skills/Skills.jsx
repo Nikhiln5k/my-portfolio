@@ -16,11 +16,20 @@ function Skills() {
     <>
       <section className="w-100">
         <div className="skills-container p-5">
-          {data.map((item, i) => (
-            <div key={i} className="skills" style={{ fontSize: "5rem" }}>
-              <i className={item.skillClass}></i>
-            </div>
-          ))}
+          <ul>
+            {data.map((item, i) => (
+              <li key={i} className="skills">
+                <i className={item.skillClass}></i>
+              </li>
+            ))}
+          </ul>
+          <ul aria-hidden="true">
+            {data.map((item, i) => (
+              <li key={i} className="skills" style={{ fontSize: "5rem" }}>
+                <i className={item.skillClass}></i>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </>
