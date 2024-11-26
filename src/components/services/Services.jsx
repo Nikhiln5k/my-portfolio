@@ -1,32 +1,29 @@
-import React, { useEffect } from 'react'
-import './Services.css'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Services.css'
 
+gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
 
-  gsap.registerPlugin(ScrollTrigger);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
-    gsap.set(".section", { opacity: 0, background: "linear-gradient(to bottom, #e9e9e3, #d5deef)" });
-    gsap.to(".section", {
-      
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".section",
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-        toggleActions: "play none none reverse",
-      },
-    });
+    const el = sectionRef.current;
+
+    gsap.fromTo(el,{background:"#e9e9e3"}, {background:"linear-gradient(to bottom, #e9e9e3, #d5deef)", duration:5, scrollTrigger:{
+      trigger:el,
+      start:"top 80%",
+      end:"top 30%",
+      scrub:1
+    }})
   }, []);
   
   return (
     <>
-        <section className='section d-flex justify-content-center align-items-center flex-column gap-3 p-5 '>
-        <div className="banner-head text-center">
+        <section ref={sectionRef} className='section d-flex justify-content-center align-items-center flex-column gap-3 p-5 '>
+          <div className="banner-head text-center">
             <p className='head d-flex flex-column fs-2 fw-bold'>
               <span style={{lineHeight:"40px"}}>Collaborate with brands and agencies to </span>
               <span style={{lineHeight:"40px"}}>create impactful results.</span>
