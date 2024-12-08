@@ -6,10 +6,12 @@ import Services from "../../components/services/Services";
 import Footer from "../../components/footer/Footer";
 import Banner from "../../components/banner/Banner";
 import "./HomePage.css";
+import Cursor from "../../components/cursor/Cursor";
 
 function HomePage() {
   return (
     <>
+      <Cursor />
       <section>
         <Header />
         <Banner />

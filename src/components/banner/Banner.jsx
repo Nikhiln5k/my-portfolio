@@ -1,13 +1,42 @@
-import React from 'react'
-import profile from '../../assets/profile1.jpg'
+import React, { useEffect, useRef } from 'react'
+import profile from '../../assets/profilepic.webp'
 import './Banner.css'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Banner() {
+  const bannerRef = useRef(null);
+
+  useEffect(()=>{
+    gsap.to(bannerRef.current, {
+      scale: 0.5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: bannerRef.current,
+        start: "top top",
+        end: "+=110%",
+        scrub: 1,
+        pin: true,
+        pinSpacing: false
+      },
+      ease: "power2.inOut",
+      duration: 1
+    });
+
+    return ()=>{
+      if(bannerRef.current){
+        gsap.killTweensOf(bannerRef.current);
+      }
+    }
+  },[])
   return (
     <>
         <main
+          ref={bannerRef}
           className="banner col-md-12 col-12 p-5 d-flex flex-column justify-content-center align-items-center "
-          style={{ borderBottomLeftRadius: "100px", borderBottomRightRadius: "100px" }}
+          style={{ borderBottomLeftRadius: "100px", borderBottomRightRadius: "100px", zIndex:"-100" }}
         >
           <div className="d-flex relative">
             <div className="bg-light " style={{width:"130px",height:"130px",overflow:"hidden", border:"2px solid grey", borderRadius:"50%"}}>

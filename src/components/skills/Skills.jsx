@@ -14,7 +14,7 @@ function Skills() {
   ];
   return (
     <>
-      <section className="w-100">
+      {/* <section className="w-100">
         <div className="skills-container p-5">
           <ul>
             {data.map((item, i) => (
@@ -30,6 +30,29 @@ function Skills() {
               </li>
             ))}
           </ul>
+        </div>
+      </section> */}
+
+      <section class="section p-3 d-flex justify-content-center bg-off-white clientsSection">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="clientsCarousel">
+                <div class="d-flex carouselTrack">
+                  {data.map((item, i) => (
+                    <div key={i} className="clientLogo">
+                      <i className={item.skillClass}></i>
+                    </div>
+                  ))}
+                  {data.map((item, i) => (
+                    <div key={i} className="clientLogo">
+                      <i className={item.skillClass}></i>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

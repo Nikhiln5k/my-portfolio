@@ -1,0 +1,31 @@
+header{
+    margin-top: 15px;
+    margin-bottom: 3em;
+}
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 3;
+    transition: all 0.3s ease-out;
+}
+
+.header-scroll{
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #2727271e;
+    z-index: 1000;
+}
+
+@media (max-width:964px) {
+    header{
+        margin-top: 5px;
+        margin-bottom: 1em;
+    }
+
+    .header{
+        position: unset;
+    }
+}

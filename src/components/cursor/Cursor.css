@@ -1,0 +1,19 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ff0000;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    will-change: transform, scale;
+  }
+  
+  .hover-text {
+    cursor: pointer;
+  }
+  

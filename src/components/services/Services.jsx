@@ -12,7 +12,7 @@ function Services() {
   useEffect(() => {
     const el = sectionRef.current;
 
-    gsap.fromTo(el,{background:"#e9e9e3"}, {background:"linear-gradient(to bottom, #e9e9e3, #d5deef)", duration:5, scrollTrigger:{
+    gsap.fromTo(el,{background:"#e9e9e3"}, {background:"linear-gradient(to bottom, #e9e9e3, #fff)", duration:5, scrollTrigger:{
       trigger:el,
       start:"top 80%",
       end:"top 30%",

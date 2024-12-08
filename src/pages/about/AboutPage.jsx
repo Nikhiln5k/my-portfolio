@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import cv from "../../assets/Nikhil_Resume.pdf";
-import profile from "../../assets/profile1.jpg";
+import profile from "../../assets/profilepic.webp";
 import './AboutPage.css'
+import Cursor from "../../components/cursor/Cursor";
 
 function AboutPage() {
   const data = [
@@ -17,6 +17,7 @@ function AboutPage() {
   ];
   return (
     <>
+    <Cursor/>
       <section className="about-section d-flex flex-column justify-content-center align-items-center" style={{backgroundColor: "#000" }}>
         <Row className="p-2" style={{ border: "1px solid #2424245e", borderBottomLeftRadius: "100px", borderBottomRightRadius: "100px",}}>
           <Col className="p-2 d-flex justify-content-center" md={6} sm={12}>
@@ -37,7 +38,7 @@ function AboutPage() {
                 about my journey below.
               </span>
               <div className="mt-5">
-                <Link to={cv} target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #8884", color: "white",}}>
+                <Link to="https://drive.google.com/file/d/1uJxBXI0EtiQionp9sS3lhYu-kSa8-MpL/view?usp=sharing" target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #8884", color: "white",}}>
                   View my CV
                 </Link>
               </div>
