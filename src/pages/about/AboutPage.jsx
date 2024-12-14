@@ -33,7 +33,7 @@ function AboutPage() {
                 </span>
               </p>
               <span className="text-white">
-                Fuelled by a passion for developing web applications, I have a
+                Fueled by a passion for developing web applications, I have a
                 desire to excel and continuously improve in my work. Learn more
                 about my journey below.
               </span>

@@ -1,7 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import HomePage from "./pages/home/HomePage";
 import AboutPage from "./pages/about/AboutPage";
-import { useEffect, useState } from "react";
+import AllProjects from "./pages/allprojects/AllProjects";
 import Loader from "./components/loader/Loader";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<AllProjects />} />
         </Routes>
       )}
     </div>

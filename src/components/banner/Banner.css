@@ -11,9 +11,16 @@
     background-image: linear-gradient(97deg, rgb(11,11,11) 0%, rgb(12,12,12, 0.55) 100%, rgb(12,12,12, 0.55) 100%);
 }
 
-.animate {
+.contact button{
+  padding: 10px 15px 10px 15px;
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px 6px #44444465;
   animation: bounce 5s infinite;
 }
+
 
 @keyframes bounce {
   0%,

@@ -8,6 +8,7 @@ header{
     background-color: transparent;
     position: fixed;
     top: 3;
+    z-index: 10;
     transition: all 0.3s ease-out;
 }
 

@@ -9,14 +9,6 @@ h1{
     font-size: 50px;
 }
 
-.contact button{
-    padding: 10px 15px 10px 15px;
-    background-color: #242424;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 6px 6px #44444465;
-}
 
 .primary-btn{
     padding: 1rem 2rem 1rem 2rem;
@@ -26,6 +18,7 @@ h1{
     height: 100%;
     width: 100%;
     opacity: 1;
+    border: none;
     border-radius: 60px;
 }
 
