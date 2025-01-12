@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className="d-flex gap-2">
           <Link className="primary-btn d-flex" to={"mailto:nikhilsk289@gmail.com"} style={{textDecoration:"none"}}>
-              Email Me
+              Email
           </Link>
           <button className="secondary-btn" onClick={() => window.open('https://wa.me/7592850289', '_blank')}>
             Whatsapp

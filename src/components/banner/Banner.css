@@ -36,8 +36,8 @@
 
 @media screen and (max-width: 764px) {
   .banner-head p {
-    font-size: 36px !important;
-    line-height: 40px;
+    font-size: 6.5vw !important;
+    line-height: 1.6rem;
   }
 }
   

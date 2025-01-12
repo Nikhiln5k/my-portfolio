@@ -25,8 +25,8 @@ function Services() {
         <section ref={sectionRef} className='section d-flex justify-content-center align-items-center flex-column gap-3 p-5 ' style={{zIndex:"3", position:"relative"}}>
           <div className="banner-head text-center">
             <p className='head d-flex flex-column fs-2 fw-bold'>
-              <span style={{lineHeight:"40px"}}>Collaborate with brands and agencies to </span>
-              <span style={{lineHeight:"40px"}}>create impactful results.</span>
+              <span style={{lineHeight:"1.6rem"}}>Collaborate with brands and agencies to </span>
+              <span style={{lineHeight:"1.6rem"}}>create impactful results.</span>
             </p>
           </div>
             <div className='title'>

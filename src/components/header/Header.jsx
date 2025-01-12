@@ -40,7 +40,7 @@ function Header() {
   return (
     <>
         <header className='d-flex justify-content-center'>
-            <Navbar ref={headerRef} className='header p-3 d-flex justify-content-md-between justify-content-center'>
+            <Navbar ref={headerRef} className='header p-3 d-flex justify-content-md-between justify-content-center w-100'>
                 <div className='d-flex align-items-center gap-2 me-3'>
                     <a style={style} href={'mailto:nikhilsk289@gmail.com'}>
                         <i className="fa-solid fa-envelope d-md-none d-inline" style={{fontSize:"2rem"}}></i>

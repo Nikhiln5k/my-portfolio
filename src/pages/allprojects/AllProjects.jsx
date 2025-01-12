@@ -17,7 +17,7 @@ function AllProjects() {
       name: "All",
       content: data,
     },
-    { name: "MERN", content: data.filter(project => project.type === "MERN") },
+    { name: "Fullstack", content: data.filter(project => project.type === "Fullstack") },
     {
       name: "React",
       content: data.filter(project => project.type === "React"),

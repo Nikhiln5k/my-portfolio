@@ -65,7 +65,7 @@ function Projects() {
               },
             }}
           >
-          {data?.map((item,i) => (
+          {data?.slice(0,4).map((item,i) => (
               <div key={i} className="item">
                 <a href={item.link} style={{textDecoration:"none", color:"#444"}}>
                   <Card className="text-center btn" style={{ border: "none", borderRadius: "6px", background: "transparent", }}>
