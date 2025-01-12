@@ -34,11 +34,6 @@ section h2{
 }
 
 @media screen and (max-width: 700px) {
-   .banner-head .head{
-    font-size: 25px !important;
-    line-height: 20px !important;
-   }
-
    .cards{
     width: 300px;
     padding: 10px;

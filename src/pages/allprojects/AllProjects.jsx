@@ -66,7 +66,7 @@ function AllProjects() {
                         <a href={data.link} style={{textDecoration:"none", color:"white"}}>
                           <Card.Img style={{ borderRadius: "15px", filter: "grayscale(70%)"}} variant="top" src={data.img} />
                           <Card.Body>
-                            <Card.Title>{data.title}</Card.Title>
+                            <Card.Title><p>{data.title}</p></Card.Title>
                           </Card.Body>
                         </a>
                       </Card>
