@@ -38,7 +38,7 @@ function AboutPage() {
                 about my journey below.
               </span>
               <div className="mt-5">
-                <Link to="https://drive.google.com/file/d/1uJxBXI0EtiQionp9sS3lhYu-kSa8-MpL/view?usp=sharing" target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #8884", color: "white",}}>
+                <Link to="../../assets/Nikhil_Resume.pdf" target="_blank" style={{ textDecoration: "none", backgroundColor: "#000", padding: "15px 20px 15px 20px", borderRadius: "25px", border: "2px solid #8884", color: "white",}}>
                   View my CV
                 </Link>
               </div>

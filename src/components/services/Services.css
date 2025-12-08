@@ -33,6 +33,14 @@ section h2{
     font-size: 14px;
 }
 
+#backend-tip, #frontend-tip {
+    background-color: #ffffff65;
+    color: rgba(0, 0, 0, 0.753);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(214, 219, 219);
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 700px) {
    .cards{
     width: 300px;

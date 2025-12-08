@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Services.css";
 import { backendData, frontendData } from "../../services";
+import { Tooltip } from "react-tooltip";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,6 +59,7 @@ function Services() {
               to life.
             </p>
             <div style={{ display: "flex", alignItems: "center" }}>
+              <Tooltip id="frontend-tip" />
               {frontendData.map((item, i) => (
                 <img
                   key={i}
@@ -65,6 +67,8 @@ function Services() {
                   alt=""
                   width="35"
                   height="35"
+                  data-tooltip-id="frontend-tip"
+                  data-tooltip-content={item.title}
                   style={{
                     borderRadius: "50%",
                     boxShadow: "5px 2px 14px #0009",
@@ -90,13 +94,16 @@ function Services() {
               Crafting robust and scalable server-side solutions to power
               seamless digital experiences.
             </p>
-            
+
             <div style={{ display: "flex", alignItems: "center" }}>
+              <Tooltip id="backend-tip" />
               {backendData.map((item, i) => (
                 <img
                   key={i}
                   src={item.img}
-                  alt=""
+                  alt={item.title}
+                  data-tooltip-id="backend-tip"
+                  data-tooltip-content={item.title}
                   width="35"
                   height="35"
                   style={{

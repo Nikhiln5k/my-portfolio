@@ -18,12 +18,12 @@ export const backendData = [
     link: "https://card.s-zgroup.com/",
     type: "be"
   },
-  // {
-  //   title: "Scalesius",
-  //   img: "/assets/media_player.png",
-  //   link: "https://testapp.touchworldtechnology.com/scalesius/ui/#/login",
-  //   type: "be"
-  // },
+  {
+    title: "Scalesius",
+    img: "/assets/scalecius.png",
+    link: "https://testapp.touchworldtechnology.com/scalesius/ui/#/login",
+    type: "be"
+  },
 ];
 
 export const frontendData = [

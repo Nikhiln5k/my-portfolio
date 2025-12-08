@@ -46,7 +46,7 @@ function Header() {
                         <i className="fa-solid fa-envelope d-md-none d-inline" style={{fontSize:"2rem"}}></i>
                         <span className='d-none d-md-inline'>nikhilsk289@gmail.com</span>
                     </a>
-                    <a href="https://drive.google.com/file/d/1uJxBXI0EtiQionp9sS3lhYu-kSa8-MpL/view?usp=sharing" target='_blank' rel="noreferrer" className='bg-light text-dark' style={{textDecoration:"none", borderRadius:"20px", padding:"10px 15px 10px 15px"}}>CV</a>
+                    <a href="../../assets/Nikhil_Resume.pdf" target='_blank' rel="noreferrer" className='bg-light text-dark' style={{textDecoration:"none", borderRadius:"20px", padding:"10px 15px 10px 15px"}}>CV</a>
                 </div>
                 <div className='d-flex align-items-center gap-2'>
                     <Link style={style} to={'/about'} className='fw-md-normal fw-bold'><span>About <span className='d-none d-md-inline'>me</span></span></Link>
