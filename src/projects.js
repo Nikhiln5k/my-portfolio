@@ -23,10 +23,10 @@ export const data = [
     link: "https://github.com/Nikhiln5k/Travel_Website",
     type: "HTML",
   },
-  {
-    title: "Weather App",
-    img: "/assets/weather_app.png",
-    link: "https://github.com/Nikhiln5k/Weather-app",
-    type: "HTML",
-  },
+  // {
+  //   title: "Weather App",
+  //   img: "/assets/weather_app.png",
+  //   link: "https://github.com/Nikhiln5k/Weather-app",
+  //   type: "HTML",
+  // },
 ];

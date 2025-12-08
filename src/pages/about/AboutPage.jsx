@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import profile from "../../assets/profilepic.webp";
+import profile from "../../assets/profilepic1.jpg";
 import './AboutPage.css'
 import Cursor from "../../components/cursor/Cursor";
 
@@ -50,12 +50,12 @@ function AboutPage() {
           <Col className="text-white" style={{float:"left"}} md={6} sm={12}>
             <h2>My career journey</h2>
             <p className="mt-4" style={{ color: "#999" }}>
-              I’m a passionate full-stack developer with a strong foundation in the MERN stack and a commitment to delivering seamless, user-friendly applications. Currently, I’m honing my skills as a Software Developer Intern at Smart Matrix Global Technologies Pvt Ltd, where I’m gaining hands-on experience in developing full-scale web applications using technologies like React, Angular, Node.js, and PostgreSQL.
+              I’m a full-stack developer with a strong foundation in the MERN stack and a focus on building clean, user-friendly applications. I am currently working as a Backend Developer at TouchWorld Technology LLC, where I contribute to building scalable systems and efficient backend architectures.
               <p className="mt-2" style={{ color: "#999" }}>
-                I’m involved in both frontend and backend development, contributing to projects that emphasize efficient data management, responsive design, and intuitive user interfaces. My work includes collaborating with cross-functional teams, implementing complex features, and solving real-world challenges, all of which have enhanced my skills and understanding of modern web development practices.
+                I have hands-on experience across both frontend and backend development, working with technologies such as React, Angular, Node.js, and PostgreSQL. My work involves developing robust APIs, optimizing database interactions, and collaborating with teams to deliver responsive, high-quality web applications.
               </p>
               <p className="mt-2" style={{ color: "#999" }}>
-                As I continue to grow in this field, I’m excited to take on new challenges and build impactful applications that enhance user experiences and meet business objectives.
+                I’m continuously improving my skills and enjoy taking on new challenges that help me build impactful, reliable solutions aligned with modern development standards.
               </p>
             </p>
           </Col>
@@ -76,11 +76,11 @@ function AboutPage() {
             </div>
           </Col>
         </Row>
-          <div className="text-center mt-5">
+          {/* <div className="text-center mt-5">
             <div>
-              <p className="text-white">© 2024 All rights reserved</p>
+              <p className="text-white">🖂 nikhilsk289@gmail.com</p>
             </div>
-          </div>
+          </div> */}
       </section>
     </>
   );

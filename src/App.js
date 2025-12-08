@@ -13,7 +13,7 @@ function App() {
     const load = () => {
       setTimeout(() => {
         setLoader(false);
-      }, 2000);
+      }, 1500);
     };
     load();
   }, [location]);

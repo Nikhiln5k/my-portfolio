@@ -31,7 +31,7 @@ function Projects() {
   // ];
   return (
     <>
-      <section className="d-flex flex-column gap-3 justify-content-center align-items-center p-5">
+      <section className="d-flex flex-column gap-3 justify-content-center align-items-center mt-5 mb-5">
         <div className="title">
           <span className="fw-bold">Projects</span>
         </div>
@@ -47,31 +47,49 @@ function Projects() {
             </a>
           ))}
         </div> */}
-        <div className="projects d-flex justify-content-center flex-column gap-2 w-100" style={{overflow:"hidden"}}>
+        <div
+          className="projects d-flex justify-content-center flex-column gap-2 w-100"
+          style={{ overflow: "hidden" }}
+        >
           <OwlCarousel
             className="owl-theme"
             loop
             autoplay
+            autoplayTimeout={3000} // Smooth timing
+            autoplaySpeed={1200} // Smooth slide speed
+            smartSpeed={1200} // Controls animation smoothness
             center
+            dots={false} // cleaner look
+            nav={false}
+            stagePadding={40} // gives room for larger center item
             responsive={{
-              0: {
-                items: 1,
-              },
-              600: {
-                items: 2,
-              },
-              1000: {
-                items: 3,
-              },
+              0: { items: 1, stagePadding: 20 },
+              600: { items: 2, stagePadding: 30 },
+              1000: { items: 3, stagePadding: 40 },
             }}
           >
-          {data?.slice(0,4).map((item,i) => (
+            {data?.slice(0, 4).map((item, i) => (
               <div key={i} className="item">
-                <a href={item.link} style={{textDecoration:"none", color:"#444"}}>
-                  <Card className="text-center btn" style={{ border: "none", borderRadius: "6px", background: "transparent", }}>
-                    <Card.Img style={{ borderRadius: "15px", filter: "grayscale(70%)"}} variant="top" src={item.img} />
+                <a
+                  href={item.link}
+                  style={{ textDecoration: "none", color: "#444" }}
+                >
+                  <Card
+                    className="text-center btn card-item"
+                    style={{
+                      border: "none",
+                      borderRadius: "6px",
+                      background: "transparent",
+                    }}
+                  >
+                    <Card.Img
+                    className="card-img"
+                      style={{ borderRadius: "15px", filter: "grayscale(70%)" }}
+                      variant="top"
+                      src={item.img}
+                    />
                     <Card.Body>
-                      <Card.Title>{item.title}</Card.Title>
+                      <Card.Title style={{fontSize: "14px"}}>{item.title}</Card.Title>
                     </Card.Body>
                   </Card>
                 </a>
@@ -79,8 +97,8 @@ function Projects() {
             ))}
           </OwlCarousel>
         </div>
-        <Link to={'/projects'}>
-            <button className="primary-btn">See All Projects</button>
+        <Link to={"/projects"}>
+          <button className="primary-btn">See All Projects</button>
         </Link>
       </section>
     </>

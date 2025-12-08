@@ -28,7 +28,7 @@ function Footer() {
 
         <div className='text-center mt-5'>
             <div>
-                <p>© 2024 All rights reserved</p>
+                <p>© 2024 Nikhilsk</p>
             </div>
             <div className="ms-3">
                 <Link style={{textDecoration:"none", color:"#383838", marginRight:"15px"}} to={'https://www.linkedin.com/in/nikhil-s-kumar-4b6127297/'}>Linkedin</Link>
