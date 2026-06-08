@@ -33,7 +33,7 @@ function Projects() {
     <>
       <section className="d-flex flex-column gap-3 justify-content-center align-items-center mt-5 mb-5">
         <div className="title">
-          <span className="fw-bold">Projects</span>
+          <span className="fw-bold">Personal Projects</span>
         </div>
         {/* <div className="d-flex justify-content-center gap-2 flex-wrap">
           {data?.map((item,i) => (

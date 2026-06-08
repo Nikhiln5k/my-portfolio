@@ -1,88 +1,139 @@
-.tabs-page{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    overflow-y: scroll;
+.tabs-page {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow-y: scroll;
 }
-.tabs{
-    width: 100%;
-    height: 100%;
-    background-color: black;
+.tabs {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
-.all-projects ul{
-    list-style: none;
-    height: 100px;
-    overflow: scroll;
-    
+.all-projects ul {
+  list-style: none;
+  height: 100px;
+  overflow: scroll;
 }
-.all-projects ul li button{
-    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.nonactive-btn{
-    padding: 10px 15px 10px 15px;
-    color: white;
-    background-color: rgb(36, 36, 36);
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    border: none;
-    border-radius: 60px;
+.all-projects ul li button {
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.active-btn{
-    padding: 10px 15px 10px 15px;
-    color: rgb(36, 36, 36);
-    border: 2px solid rgba(36, 36, 36, 0.082);
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    border-radius: 60px;
+.nonactive-btn {
+  padding: 10px 15px 10px 15px;
+  color: white;
+  background-color: rgb(36, 36, 36);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  border: none;
+  border-radius: 60px;
 }
-.card-wraper{
+
+.active-btn {
+  padding: 10px 15px 10px 15px;
+  color: rgb(36, 36, 36);
+  border: 2px solid rgba(36, 36, 36, 0.082);
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  border-radius: 60px;
+}
+/* .card-wraper{
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
 }
 
 .project-card{
-    flex: 1 1 50%;
     transform: scale(1);
     transition: all 0.2s linear;
 }
 .project-card:hover{
     transform: scale(0.95);
+} */
+.card-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
 }
 
+.project-card {
+  width: 300px;
+  background: transparent !important;
+  border: none !important;
+  transition: all 0.2s linear;
+}
 
-@media (max-width:900px){
-    .nonactive-btn{
-        padding: 5px 10px 5px 10px;
-        color: white;
-        font-size: 14px;
-        background-color: rgb(36, 36, 36);
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        border: none;
-        border-radius: 60px;
-    }
-    
-    .active-btn{
-        padding: 5px 10px 5px 10px;
-        color: rgb(36, 36, 36);
-        border: 2px solid rgba(36, 36, 36, 0.082);
-        background-color: white;
-        font-size: 14px;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        border-radius: 60px;
-    }
-    .card-wraper{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+.project-card img {
+  width: 100%;
+  height: 170px; /* adjust to match your old cards */
+  object-fit: cover;
+  border-radius: 15px;
+  filter: grayscale(70%);
+}
+
+.project-card:hover {
+  transform: scale(0.95);
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* .project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: grayscale(70%);
+} */
+
+.project-body {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .nonactive-btn {
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    border: none;
+    border-radius: 60px;
+  }
+
+  .active-btn {
+    padding: 5px 10px 5px 10px;
+    color: rgb(36, 36, 36);
+    border: 2px solid rgba(36, 36, 36, 0.082);
+    background-color: white;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    border-radius: 60px;
+  }
+  .card-wraper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

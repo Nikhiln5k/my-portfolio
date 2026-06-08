@@ -6,23 +6,37 @@ import AllProjects from "./pages/allprojects/AllProjects";
 import Loader from "./components/loader/Loader";
 
 function App() {
-  const [loader, setLoader] = useState(true);
+  // const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
   const location = useLocation();
+  // useEffect(() => {
+  //   setLoader(true)
+  //   const load = () => {
+  //     setTimeout(() => {
+  //       setLoader(false);
+  //     }, 1500);
+  //   };
+  //   load();
+  // }, [location]);
   useEffect(() => {
-    setLoader(true)
-    const load = () => {
-      setTimeout(() => {
-        setLoader(false);
-      }, 1500);
-    };
-    load();
+    setLoader(true);
+    // hide loader on next paint (route rendered)
+    const frame = requestAnimationFrame(() => {
+      setLoader(false);
+    });
+    return () => cancelAnimationFrame(frame);
+    // const handleLoad = () => {
+    //   setLoader(false);
+    // };
+    // window.addEventListener("load", handleLoad);
+    // return () => window.removeEventListener("load", handleLoad);
   }, [location]);
   return (
     <div className="App">
       {loader ? (
         <Loader /> || "Loading..."
       ) : (
-        <Routes>
+        <Routes location={location}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<AllProjects />} />

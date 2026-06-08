@@ -23,6 +23,12 @@ export const data = [
     link: "https://github.com/Nikhiln5k/Travel_Website",
     type: "HTML",
   },
+  {
+    title: "AI Email Processor",
+    img: "/assets/AI-email-processor.png",
+    link: "https://github.com/Nikhiln5k/AI-Email-Processor",
+    type: "Backend",
+  },
   // {
   //   title: "Weather App",
   //   img: "/assets/weather_app.png",
