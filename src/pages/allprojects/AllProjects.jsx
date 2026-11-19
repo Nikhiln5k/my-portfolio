@@ -18,23 +18,23 @@ function AllProjects() {
   const tabItems = [
     {
       name: "All",
-      content: data,
+      content: data.sort((a, b) => b.id - a.id),
     },
     {
       name: "Fullstack",
-      content: data.filter((project) => project.type === "Fullstack"),
+      content: data.filter((project) => project.type === "Fullstack").sort((a, b) => b.id - a.id),
     },
     {
       name: "React",
-      content: data.filter((project) => project.type === "React"),
+      content: data.filter((project) => project.type === "React").sort((a, b) => b.id - a.id),
     },
     {
       name: "HTML",
-      content: data.filter((project) => project.type === "HTML"),
+      content: data.filter((project) => project.type === "HTML").sort((a, b) => b.id - a.id),
     },
     {
       name: "Backend",
-      content: data.filter((project) => project.type === "Backend"),
+      content: data.filter((project) => project.type === "Backend").sort((a, b) => b.id - a.id),
     },
   ];
 
